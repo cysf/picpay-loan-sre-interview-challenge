@@ -1,81 +1,83 @@
-# Desafio SRE
+# TESTE QA SENIOR
+### Objetivo
+Avaliar a habilidade do candidato em configurar um ambiente de testes, utilizar Git e aplicar conhecimentos básicos de Appium ou Cypress e Javascript.
 
-Obrigado pelo interesse em fazer parte do nosso time! Preparamos este desafio com carinho para ajudar a entender um pouco mais dos seus conhecimentos na área de DevOps/SRE
+### Cenário
+**Aplicativo**: Acessar a nossa landing page - https://meus-emprestimos.picpay.com/ (poderá ser via navegador ou mobile) com um formulário de login.
 
-Se não entender algum conceito ou parte do problema, não é motivo para se preocupar! Queremos que faça o desafio até onde souber.
+### Tarefa
+- Criar um teste automatizado que:
+- Abra o navegador a sua escolha.
+- Abre o site, navegue na área não logada;
+- Preencha o formulário de cadastro;
+- Clique no botão de login.
+- Verifique se o usuário foi redirecionado para a tela inicial ou tela de erro.
+- Gerar evidências das navegações.
 
-No mais, divirta-se :D
+### Instruções para o Candidato
+- Fork do repositório: 
+O candidato deverá criar um fork de um repositório GitHub com o projeto do aplicativo e o framework de testes (Appium ou Cypress) já configurado.
 
-## Avisos antes de começar
+- Configuração do ambiente: 
+O candidato deverá configurar seu ambiente de desenvolvimento com as ferramentas necessárias para executar os testes (Node.js, npm, etc.).
 
-- Leia com atenção este documento todo e tente seguir ao **máximo** as instruções;
-- Crie um repositório no seu GitHub **sem citar nada relacionado ao PicPay**;
-- Faça seus commits no seu repositório;
-- Envie o link do seu repositório para o email **do recrutador responsável**;
-- Dê uma olhada nos [Links Úteis](#links-úteis);
-- Dê uma olhada em como será a [entrevista](#para-o-dia-da-entrevista-técnica);
-- Fique à vontade para perguntar qualquer dúvida aos recrutadores;
+- Criação do teste: 
+O candidato deverá criar um novo arquivo de teste e implementar o cenário descrito acima.
 
-## Conteúdo do repositório
+- Execução do teste: O candidato deverá executar o teste e verificar se ele passa.
 
-Este projeto é um exemplo bem simples de aplicação web full-stack, utilizando uma arquitetura de microsserviços com um BFF em **Go** para otimizar a comunicação entre o frontend e o backend. O backend em **Java** interage com um banco de dados MySQL para armazenar e recuperar os dados, enquanto o frontend em **React** é responsável pela interface do usuário.
+- Commit e push: 
+O candidato deverá commitar as alterações e fazer um push para o seu fork.
 
-Você pode subir o banco de dados MySQL utilizando o arquivo **./docker-compose.yaml** e pode ser inicializado utilizando o **./init.sql**
+- Envio do link: 
+O candidato deverá enviar o link do seu fork para que a equipe possa avaliar o código.
 
-Alguns exemplos de requisição estão no arquivo **./requests.http**
+- Repositório Base:
+Para simplificar a avaliação, você pode criar um repositório base no GitHub com o seguinte conteúdo:
 
-### Váriaveis de Ambiente
+- Aplicativo: 
+Um aplicativo mobile simples (React Native, Flutter ou outro framework) com um formulário de login.
 
-|Aplicação|Key|Default|Description|Exemplo|
-|-|-|-|-|-|
-|backend|DB_URL|n/a|Define a URL de conexão com o banco de dados.|mysql://user:password@host:port/database|
-|backend|DB_USERNAME|n/a|Especifica o nome de usuário utilizado para autenticar a conexão com o banco de dados.|myuser|
-|backend|DB_PASSWORD|n/a|Contém a senha associada ao nome de usuário para a conexão com o banco de dados.|mypassword123|
-|backend|JWT_SECRET_KEY|n/a|É uma chave secreta utilizada para gerar e verificar tokens JWT (JSON Web Tokens).|averylongandsecuresecretkey|
-|bff|PORT|8085|Porta de exposição do BFF.|n/a|
-|bff|API_URL|http://localhost:8080|URL de exposição do backend.|n/a|
-|bff|CLIENT_ID|n/a|Identifica um cliente em um sistema de autenticação OAuth.|bff|
-|bff|CLIENT_SECRET|n/a|É uma chave secreta associada ao Client ID, utilizada para verificar a identidade do cliente durante o processo de autenticação OAuth.|averylongandsecureclientsecret|
+- Framework de testes:
+Uma estrutura básica de testes com Appium ou Cypress, incluindo configurações e exemplos de testes.
 
-# Avaliação
+- README:
+Um arquivo README com instruções detalhadas sobre como configurar o ambiente, executar os testes e enviar a solução.
 
-## O que deve ser feito?
+## Teste Prático - Engenheiro de Qualidade Senior
+### Instruções
 
-- Ajustes que fazem todas as aplicações subirem e se comunicarem;
-- Colete as métricas expostas pela aplicação backend, seria legal também exibilas em algum dashboard;
-- Colete e armazene os logs das aplicações;
-- Um README contendo os seus pensamentos ao longo do projeto;
-- Um desenho contendo os serviços que explique o funcionamento;
-
-
-Faça commits ao longo do processo, queremos entender o seu modo de pensar! :)
-
-Para a entrevista, separe também anotações contendo melhorias que faria em cada aplicação ou na arquitetura em geral. Não envie estas anotações na pull request.
-
-## O que será avaliado ?
-
-- Compreensão de arquitetura;
-- Monitoramento;
-- Documentação;
-- Conteinerização;
-- Habilidade de resolução de problemas.
-
-
-## O que será um Diferencial
-
-- Automatização
-- Utilização de Helm/Kubernetes
-- Alertas
-- Melhorias na arquitetura.
+1. **Fork este repositório:** Clique no botão "Fork" no canto superior direito.
+2. **Clone o seu fork:** `git clone https://github.com/seu_usuario/teste-pratico.git`
+3. **Instale as dependências:** `npm install`
+4. **Crie um novo arquivo de teste:** `testes/login_test.js` (ou similar)
+5. **Implemente o teste:** Siga as instruções acima para criar o teste automatizado.
+6. **Execute os testes:** `npm test`
+7. **Faça um commit e push:**
+   ```bash
+   git add .
+   git commit -m "Implementação do teste de login"
+   git push origin main
+Envie o link do seu fork: Envie o link do seu repositório para a equipe de recrutamento.
+Estrutura do Projeto
+app: Caso utilize mobile através de emulador - Contém o código fonte do aplicativo.
+testes: Contém os arquivos de teste.
+package.json: Lista as dependências do projeto.
 
 
-## Links Úteis
 
-- https://docs.spring.io/spring-boot/reference/actuator/metrics.html
-- https://github.com/open-telemetry/opentelemetry-java-instrumentation
-- https://12factor.net/
-- https://docs.docker.com/reference/dockerfile/
-- https://docs.docker.com/compose/
-- https://pt-br.legacy.reactjs.org/docs/getting-started.html
-- https://doubletapp.medium.com/overview-of-monitoring-system-with-prometheus-and-grafana-9ce6501eff88
-- https://www.elastic.co/pt/blog/getting-started-with-the-elastic-stack-and-docker-compose
+Dicas
+- Utilize os comentários para explicar o seu código.
+- Siga as boas práticas de desenvolvimento de testes.
+- Divida o teste em etapas menores para facilitar a leitura e a manutenção.
+- Avaliação:
+- A avaliação do teste prático poderá considerar os seguintes aspectos:
+- Correção do código: O teste executa corretamente o cenário proposto?
+- Qualidade do código: O código está bem estruturado, comentado e segue boas práticas?
+- Uso do framework: O candidato demonstra conhecimento do framework escolhido (Appium ou Cypress)?
+- Criatividade: O candidato apresentou alguma solução inovadora ou diferente?
+- Observações:
+- Flexibilidade: Adapte o nível de complexidade do teste de acordo com o perfil do candidato e a experiência desejada.
+- Personalização: Você pode adicionar outros cenários de teste para avaliar diferentes habilidades (por exemplo, testes de API, testes de performance).
+- Ferramentas: Utilize ferramentas de code review para facilitar a avaliação do código.
+- Com este teste prático, você poderá avaliar de forma mais precisa as habilidades técnicas e a capacidade de resolução de problemas dos candidatos.
