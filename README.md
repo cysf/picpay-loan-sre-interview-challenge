@@ -3,7 +3,7 @@
 Avaliar a habilidade do candidato em configurar um ambiente de testes, utilizar Git e aplicar conhecimentos básicos de Appium ou Cypress e Javascript.
 
 ### Cenário
-**Aplicativo**: Acessar a nossa landing page - https://meus-emprestimos.picpay.com/ (poderá ser via navegador ou mobile) com um formulário de login.
+**Aplicativo**: Acessar a nossa landing page - https://meus-emprestimos.picpay.com/ (poderá ser via navegador) com um formulário de login.
 
 ### Tarefa
 - Criar um teste automatizado que:
@@ -35,9 +35,6 @@ O candidato deverá enviar o link do seu fork para que a equipe possa avaliar o 
 - Repositório Base:
 Para simplificar a avaliação, você pode criar um repositório base no GitHub com o seguinte conteúdo:
 
-- Aplicativo: 
-Um aplicativo mobile simples (React Native, Flutter ou outro framework) com um formulário de login.
-
 - Framework de testes:
 Uma estrutura básica de testes com Appium ou Cypress, incluindo configurações e exemplos de testes.
 
@@ -60,7 +57,6 @@ Um arquivo README com instruções detalhadas sobre como configurar o ambiente, 
    git push origin main
 Envie o link do seu fork: Envie o link do seu repositório para a equipe de recrutamento.
 Estrutura do Projeto
-app: Caso utilize mobile através de emulador - Contém o código fonte do aplicativo.
 testes: Contém os arquivos de teste.
 package.json: Lista as dependências do projeto.
 
