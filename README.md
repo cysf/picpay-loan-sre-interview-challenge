@@ -1,6 +1,6 @@
 # TESTE QA SENIOR
 ### Objetivo
-Avaliar a habilidade do candidato em configurar um ambiente de testes, utilizar Git e aplicar conhecimentos básicos de Appium ou Cypress e Javascript.
+Avaliar a habilidade do candidato em configurar um ambiente de testes, utilizar Git e aplicar conhecimentos básicos de Cypress e Javascript.
 
 ### Cenário
 **Aplicativo**: Acessar a nossa landing page - https://meus-emprestimos.picpay.com/ (poderá ser via navegador) com um formulário de login.
